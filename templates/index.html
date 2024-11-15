@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Personalized Treatment Plan</title>
+</head>
+<body>
+    <h1>Get Your Personalized Treatment Plan</h1>
+    <form id="treatment-form">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <label for="blood_pressure">Blood Pressure:</label>
+        <input type="number" id="blood_pressure" name="blood_pressure" required>
+        
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="number" id="cholesterol" name="cholesterol" required>
+        
+        <label for="heart_rate">Heart Rate:</label>
+        <input type="number" id="heart_rate" name="heart_rate" required>
+        
+        <label for="treatment_duration">Treatment Duration:</label>
+        <input type="number" id="treatment_duration" name="treatment_duration" required>
+
+        <button type="submit">Get Treatment Plan</button>
+    </form>
+
+    <div id="result" style="display:none;">
+        <h2>Your Personalized Treatment Plan:</h2>
+        <p id="treatment-output"></p>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
